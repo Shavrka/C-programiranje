@@ -1,0 +1,28 @@
+/*
+ * ZADATAK 12500033 - 12500033
+ * Napisati program koji će za učitanu vrijednost K i N izračunati vrijednost izraza i ispisati:
+ * Kategorija: FOR petlja - C programi - Frejm /FRAMES/
+ * Izvor: https://www.znanje.org/knjige/computer/c/v/120c/12500033.htm
+ */
+
+#include <stdio.h>
+
+int main ()
+{
+int i, k, n;
+double s, p;    // vrijednost faktorijela brzo se uvecava i prelazi opseg predvidjen za cijele brojeve
+printf("Keficijent: ");
+scanf("%d", &k);
+printf("Do broja n: ");
+scanf("%d", &n);
+s = 0;		// pocetna vrijednost sume
+p = 1;		// pocetna vrijednost proizvoda
+
+for(i=1; i <= n; ++i) {	// ponavljanje za i=1 do i=n - pocetak petlje
+p *= k*i;	// nova vrijednost proizvoda p=p*k*i;
+s += p;		// nova vrijednost sume s=s+p;
+}				// kraj petlje
+
+printf("Suma faktorijela: %f", s);
+return 0;
+}

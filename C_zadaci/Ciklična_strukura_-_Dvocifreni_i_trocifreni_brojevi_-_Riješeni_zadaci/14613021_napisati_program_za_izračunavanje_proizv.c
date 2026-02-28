@@ -1,0 +1,37 @@
+/*
+ * ZADATAK 721 - 14613021
+ * Napisati program za izračunavanje proizvoda trocifrernih bojeva čija je suma prve dvije cifre parna.
+ * Kategorija: Ciklična strukura - Dvocifreni i trocifreni brojevi - Riješeni zadaci
+ * Izvor: https://www.znanje.org/knjige/computer/c/v/140c/14613021.htm
+ */
+
+#include <stdio.h>
+
+int main()
+{
+printf("Trocifren broj - Proizvod - suma prve dvije cifre parna\n");  // naslov
+int broj, d, s, exponent = 0;         // deklarisanje varijabli
+double p = 1.0;                       // pocetna vrijednost proizvoda
+
+for (broj=100; broj<=999; broj++) {   // za trocifrene brojeve radi
+d = (broj / 10);
+d = d % 10;                       // desetice
+s = broj / 100;                   // stotice
+if ((s + d) % 2 == 0 )  {         // suma prve dvije cifre parna?
+p = (double)p * broj;         // nova vrijednost proizvoda p = p * broj;
+if (p>1000) {                 // proizvod veci od 1000?
+p = p / 1000;            // podijeli proizvod sa 1000
+exponent = exponent + 3; // uvecaj eksponet za 3
+} else {                      // proizvod nije veci od 1000
+p = p / 10;              // podijeli p sa 10
+exponent = exponent + 1; // uvecaj eksponet za 1
+}
+}
+}
+printf("Proizvod = %f  eksponent %d", p, exponent); // ispis proizvoda
+return 0;
+}
+
+Ispis na ekranu:
+Trocifren broj - proizvod prve dvije cifre parna
+Proizvod = 7.300631  eksponent 1204
