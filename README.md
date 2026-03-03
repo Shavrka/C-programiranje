@@ -1,50 +1,44 @@
-# C Programming Overview
+# Zadaci u C programskom jeziku
 
-## Introduction
-C is a general-purpose programming language that is widely used for system and application software. It is known for its efficiency, and it is the basis for many modern programming languages.
+Ovaj repozitorijum predstavlja bogatu kolekciju zadataka i primera koda napisanih u programskom jeziku **C**. Idealno je mesto za početnike, ali i one koji žele da obnove svoje znanje, jer obuhvata širok spektar oblasti – od osnovnih linijskih struktura, pa sve do složenijih koncepata poput matrica, stringova i rekurzije. Uz programe će blagovremeno biti opisi programa, kako rade i šta rade.
 
-## Tasks and Concepts Covered
-1. **Data Types**
-   - Integer, Float, Double, Char
-   - Understanding of variables and type modifiers (signed, unsigned)
+## 📂 Sadržaj repozitorijuma (Kategorije zadataka)
 
-2. **Control Structures**
-   - Conditional statements: `if`, `else if`, `else`, and `switch`
-   - Looping constructs: `for`, `while`, and `do while`
+Zadaci su podeljeni u sledeće kategorije, prateći strukturu direktorijuma u repozitorijumu:
 
-3. **Functions**
-   - Definition and declaration of functions
-   - Function arguments and return values
-   - Recursion
+### 1. Linijske strukture (Osnovni programi)
+* **Linijska struktura (Osnovni zadaci)** – Upoznavanje sa osnovnim ulazom i izlazom podataka (`printf`, `scanf`), deklaracijom promenljivih i osnovnim operacijama.
+* **Linijska struktura - Izdvajanje cifara** – Rad sa matematičkim operatorima za deljenje (`/`) i modulovanje (`%`) kako bi se izdvajale pojedinačne cifre iz brojeva.
 
-4. **Pointers**
-   - Pointer declaration and dereferencing
-   - Pointer arithmetic
-   - Pointers and arrays
+### 2. Strukture grananja (Uslovi)
+* **IF-THEN i IF-THEN-ELSE strukture** – Zadaci koji koriste uslovno izvršavanje (provere određenih uslova).
+* **CASE struktura (switch-case)** – Višestruko grananje zasnovano na vrednosti jedne promenljive, odlično za pravljenje jednostavnih menija ili kalkulatora.
 
-5. **Arrays and Strings**
-   - One-dimensional and multi-dimensional arrays
-   - String manipulation functions
+### 3. Ciklične strukture (Petlje)
+* **FOR petlje** – Standardna iteracija sa poznatim brojem ponavljanja.
+* **FOR petlja u petlji (Ugnježđene petlje)** – Rad sa dvostrukim (ili višestrukim) brojačima, korisno za iscrtavanje oblika ili rad sa matricama.
+* **WHILE petlje** – Ponavljanje bloka koda dok je uslov tačan.
+* **WHILE petlja u petlji** – Ugnježđene *while* petlje.
+* **DO-WHILE petlje** – Petlje kod kojih se blok koda izvršava bar jednom pre provere uslova.
+* **DO-WHILE petlja u petlji** – Ugnježđene *do-while* petlje.
+* **Ciklična struktura – Dvocifreni i trocifreni brojevi** – Specifični zadaci fokusirani na obradu višecifrenih brojeva kroz petlje.
+* **Ciklična struktura – Kombinovani zadaci** – Složeniji problemi koji zahtevaju kombinovanje različitih tipova petlji i uslova.
 
-6. **Structures and Unions**
-   - Defining structures and accessing members
-   - Understanding unions: memory sharing among variables
+### 4. Nizovi (Jednodimenzionalni)
+* **Formiranje niza** – Zadaci vezani za unos i ispis elemenata niza.
+* **Izdvajanje, suma, proizvod i prebrojavanje** – Matematičke operacije nad elementima niza (traženje sume, množenje elemenata, prebrojavanje parnih/neparnih i sl.).
+* **Maksimum i minimum** – Traženje najvećeg i najmanjeg elementa, kao i njihovih pozicija (indeksa) u nizu.
+* **Sortiranje niza** – Uređivanje elemenata niza po veličini (rastući ili opadajući redosled).
 
-7. **File I/O**
-   - Reading from and writing to files
-   - File operations: opening, closing, reading, and writing
+### 5. Matrice (Dvodimenzionalni nizovi)
+* **Dvodimenzionalni nizovi / Matrice** – Rad sa kolonama i redovima, unos i ispis, obrada elemenata po dijagonalama ili specifičnim redovima/kolonama.
 
-8. **Dynamic Memory Allocation**
-   - Using `malloc()`, `calloc()`, `realloc()`, and `free()`
-   - Memory management best practices
+### 6. Stringovi (Rad sa tekstom)
+* **String strukture** – Unos, obrada i manipulacija znakovima i nizovima karaktera u C jeziku.
 
-9. **Preprocessor Directives**
-   - Understanding macros and include guards
-   - Using libraries effectively
+### 7. Funkcije
+* **Standardne funkcije** – Pisanje i pozivanje sopstvenih podprograma (funkcija) za bolju organizaciju i modularnost koda.
+* **Rekurzija** – Rešavanje problema pomoću funkcija koje pozivaju same sebe (npr. izračunavanje faktorijela, Fibonačijevog niza i sl.).
 
-10. **Error Handling**
-    - Error codes and handling mechanisms
-    - Best practices for debugging
-
-## Conclusion
-By mastering these tasks and concepts, programmers can harness the full power of C and lay a strong foundation for understanding other programming languages like C++, Java, or Python.
+### 8. Razni kombinovani zadaci
+* **Riješeni zadaci 1 & Riješeni zadaci 2** – Kolekcije različitih, često kompleksnijih zadataka koji kombinuju više gorenavedenih oblasti u jednom programu (npr. provere brojeva, rad sa matricama i specijalnim uslovima).
